@@ -1,0 +1,60 @@
+$dap-tw-height: 38px;
+$dap-tw-accent: teal;
+$dap-tw-divider: #fff;
+$dap-tw-bg: #eee;
+
+.twitter-scroll {
+  background: $dap-tw-bg;
+  height: $dap-tw-height;
+  line-height: $dap-tw-height;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+}
+
+.dap-tw-logo {
+  background-color: $dap-tw-accent;
+  box-shadow: 1px 0px 0px 0px #fff;
+  height: $dap-tw-height;  
+  left: 0;
+  position: absolute;
+  text-align: center;  
+  top: 0;
+  width: $dap-tw-height;
+  &:after {
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid $dap-tw-accent;
+    border-top: 6px solid transparent;
+    filter: drop-shadow(2px 0px 0px #fff);
+    content: "";
+    height: 0;
+    margin-top: -6px;
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    width: 0;
+  }
+  img {
+    vertical-align: text-bottom;
+  }
+}
+
+a.dap-tw-item {
+  border-right: 1px solid $dap-tw-divider;
+  color: #222;  
+  display: inline-block;
+  float: left;
+  padding: 0 1em;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+  &:hover {
+    background-color: darken($dap-tw-bg, 5%);
+  }
+}
+
+.dap-tw-name {
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-right: 0.15em;
+  text-transform: uppercase;
+}
